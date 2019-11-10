@@ -1,3 +1,24 @@
+:root {
+    font-size: 16px;
+}
+
+/* Global Settings */
 * {
-    outline: 1px dashed lightgrey;
+    outline: 0px dashed lightgrey;
+    /* Typo Colours */
+    --typo-one: rgb(255, 255, 255);
+    --typo-two: rgb(31, 31, 31);
+
+    /* Mater Colours */
+    --mater-one: rgb(255, 255, 255);
+    --mater-two: rgb(31, 31, 31);
+    --mater-three: hsl(0, 0%, 95%);
+    --mater-four: rgba(0, 0, 0, 0.5);
+}
+
+
+/* Custom Settings */
+
+#img-div {
+    outline: 0px solid red;
 }
