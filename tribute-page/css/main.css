@@ -81,5 +81,7 @@ body {
 }
 
 footer p {
+    margin-top: 100px;
+    margin-bottom: 40px;
     text-align: center;
 }
