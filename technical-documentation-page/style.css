@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500|Montserrat:500,600&display=swap');
+
+/* Global Settings */
+:root {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    /* Typography Colours */
+    --typo-one: hsl(0, 0%, 100%);
+    --typo-two: hsl(0, 0%, 30%);
+    /* Material Colours */
+    --mater-one: hsl(0, 0%, 100%);
+    --mater-two: hsl(0, 0%, 30%);
+    --mater-three: rgb(207, 97, 97);
+    --mater-four: rgb(148, 204, 75);
+}
+* {
+    outline: 1px solid hsl(0, 0%, 90%);
+}
+body {
+    margin: 0%;
+    padding: 0%;
+}
+.page-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+	grid-template-areas:
+		"navbar main main main";
+}
+#nav-bar {
+    grid-area: navbar;
+}
+#main-doc {
+    grid-area: main;
+}
+
+@media(max-width: 768px) {
+    .page-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "navbar"
+            "main";
+    }
+}
