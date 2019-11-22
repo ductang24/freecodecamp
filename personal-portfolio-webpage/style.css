@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500|Montserrat:500,600&display=swap');
+
+/* Global Settings */
+:root {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    /* Typography Colours */
+    --typo-one: hsl(0, 0%, 100%);
+    --typo-two: hsl(0, 0%, 30%);
+    /* Material Colours */
+    --mater-one: hsl(0, 0%, 100%);
+    --mater-two: hsl(0, 0%, 30%);
+    --mater-three: rgb(207, 97, 97);
+    --mater-four: rgb(148, 204, 75);
+}
+* {
+    outline: 1px solid hsl(0, 0%, 90%);
+}
+body {
+    margin: 0%;
+    padding: 0%;
+}
+.page-wrapper {
+    display: grid;
+	grid-template-areas:
+        "header"
+        "welcome-sec"
+        "projects"
+        "contact"
+        "footer";
+}
+header {
+    grid-area: header;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 3px 6px hsla(0, 0%, 0%, 0.3);
+    background-color: var(--mater-one);
+}
+#welcome-section {
+    grid-area: welcome-sec;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background-color: hsl(0, 0%, 90%);
+}
+#projects {
+    grid-area: projects;
+    margin-top: 300px;
+    background-color: hsl(0, 0%, 85%);
+}
+#contact {
+    grid-area: contact;
+    background-color: hsl(0, 0%, 90%);
+}
+footer {
+    grid-area: footer;
+    background-color: hsl(0, 0%, 85%);
+}
+
+@media(max-width: 768px) {
+
+}
